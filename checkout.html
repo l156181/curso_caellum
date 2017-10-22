@@ -1,0 +1,219 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        
+        <title>Checkout Mirror Fashion</title>
+        
+        <meta name="viewport" content="width=device-width">
+        
+        <link rel="stylesheet" href="caelum-arquivos-curso-web/mirrorfashion/css/bootstrap.css">
+        
+        <link rel=stylesheet href="checkout.css">
+        
+    <script type="text/javascript">
+        function init(){
+        document.querySelector('input[type=email]').oninvalid= function(){
+                this.setCustomValidity("");
+                if(!this.validity.valid){
+                    this.setCustomValidity("Email inválido");
+                }
+            }
+        }
+    </script>
+    
+    </head>
+    
+    <body onload="init();">
+        <nav class="nav navbar-inverse navbar-static-top navbar">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html">Mirror Fashion</a>
+            </div>
+            
+            <ul class="nav navbar-nav collapse navbar-collapse">
+                <li><a href = "sobre.html">Sobre</a></li>
+                <li><a href = "#">Ajuda</a></li>
+                <li><a href = "#">Perguntas frequentes</a></li>
+                <li><a href = "#">Entre em contato</a></li>
+            </ul>
+            
+            <button class="navbar-toggle" type="button" data-target=".navbar-collapse" data-toggle="collapse">
+            menu
+            </button>
+        </nav>
+        
+        <div class="jumbotron">
+            <div class="container">
+                <h1>Ótima escolha!</h1>
+                
+                <p>Obrigado por comprar na Mirror Fashion!
+                Preencha seus dados para efetivar a compra.</p>
+            </div>             
+        </div>
+        
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 col-lg-3"> 
+                    <div class="panel panel-default">
+                        <div class="panel-heading">           
+                            <h2 class="painel-title">Sua compra</h2>
+                        </div>
+
+                        <div class="panel-body">
+                            <img src="caelum-arquivos-curso-web/mirrorfashion/img/produtos/foto1-verde.png" alt="Fuzzy Cardigan"
+                            class="img-thumbnail img-responsive hidden-xs">
+
+                            <dl>
+                                <dt>Produto</dt>
+                                <dd>Fuzzy Cardigan</dd>
+
+                                <dt>Cor</dt>
+                                <dd>verde</dd>
+
+                                <dt>Tamanho</dt>
+                                <dd>40</dd>
+
+                                <dt>Preço</dt>
+                                <dd>R$ 129,00</dd>
+                            </dl>
+                        </div>     
+                    </div>     
+                 </div> 
+                
+                <form class="col-sm-8 col-lg-9">
+                    <div class="row">
+                        <fieldset class="col-md-6">
+                            <legend>Dados Pessoais</legend>
+
+                            <div class="form-group">
+                                <label for="nome">Nome Completo</label>
+                                <input type="text" class="form-control" id="nome" name="nome" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email</label>
+
+                                <div class="input-group">
+                                    <span class="input-group-addon">@</span>
+                                    <input type="email" class="form-control" id="email" name="email">
+                                </div>
+        <!--                                                       
+                                <input type="email" class="form-control" id="email" name="email" placeholder="email@exemplo.com">
+        -->                    
+                            </div>
+
+                            <div class="form-group">
+                                <label for="cpf">CPF</label>
+                                <input type="text" class="form-control" id="cpf" name="cpf" autofocus required>
+                            </div>
+
+                            <label>
+                                <input type="checkbox" value="sim" name ="sim" checked>
+                                Quero receber spam da Mirror Fashion
+                            </label>
+                        </fieldset>
+
+                        <fieldset class="col-md-6">
+                            <legend>Cartão de crédito</legend>
+
+                            <div class="form-group">
+                                <label for="numero-cartao">Número - CVV</label>
+
+                                <input type="text" class="form-control" id="numero-cartao" name="numero-cartao">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="bandeira-cartao">Bandeira</label>
+
+                                <select name="bandeira-cartao" id="bandeira-cartao"
+                                    class="form-control">
+                                    <option value="master">MasterCard</option>
+                                    <option value="visa">VISA</option>
+                                    <option value="amex">American Express</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="validade-cartao">Validade</label>
+
+                                <input type="month" class="form-control" id ="numero-cartao" name= "validade cartao">
+                            </div>
+                        </fieldset>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-lg pull-right">
+                        <span class="glyphicon glyphicon-thumbs-up"></span> Confirmar Pedido
+                    </button>
+                </form>
+<!-- EXEMPLOS TIPOS DE FORMS
+
+                        <input id="contrato"               name="contrato" type="checkbox"   value="sim">
+                        <label for="contrato">Aceito os termos do contrato.</label>
+                        
+                        <input type="image" name="botao" src="images/enviar.png" width="20" height="18">
+                        
+                        <input type="reset" name="reset" value="Limpar">
+                        
+                        <input type="file" name="anexo">
+
+                        <select name="cidades">
+                            <option value="bsb">Brasília</option>
+                            <option value="rj">Rio de Janeiro</option>
+                            <option value="sp">São Paulo</option>
+                        </select>
+                        
+                        <select multiple name="cidades">
+                            <option value="bsb">Brasília</option>
+                            <option value="rj">Rio de Janeiro</option>
+                            <option value="sp">São Paulo</option>
+                        </select>
+                        
+                        <select name="bairro">
+                            <optgroup label="Brasília">
+                                <option value="asan_bsb">Asa Norte</option>
+                                
+                                <option value="asas_bsb">Asa Sul   </option>
+                            </optgroup>
+                            
+                            <optgroup label="São Paulo">
+                                <option value="vlmariana_sp">Vila Mariana</option>
+                                
+                                <option value="centro_sp">Centro   </option>
+                            </optgroup>
+
+                            <optgroup label="Rio de Janeiro">
+                                <option value="botafogo_rj">Botafogo</option>
+                                
+                                <option value="centro_rj">Centro</option>
+                            </optgroup>
+                        </select>
+                        
+                        <input type="number" max="100" step="5">
+                        
+                        <input type="date" name="validade">   
+                    
+                        <input type="color" name="cor_olhos">
+                    
+                        <input name="nome" autofocus>   
+                        
+                        <input type="text" list="cidades" autocomplete="on">
+                            <datalist id="cidades">
+                                <option value="Brasília">
+                                <option value="Rio de Janeiro">
+                                <option value="São Paulo">
+                            </datalist>    
+-->                        
+                     
+<!-- EXEMPLO GLYPHICON                    
+                    <span class="glyphicon glyphicon-thumbs-up"></span>
+-->
+                      
+            </div>           
+        </div>
+       <script src="caelum-arquivos-curso-web/mirrorfashion/js/jquery.js"></script>
+        <script src="caelum-arquivos-curso-web/mirrorfashion/js/bootstrap.js"></script>
+        
+    </body>
+</html>    
+    

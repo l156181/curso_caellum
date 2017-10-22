@@ -3,7 +3,9 @@
 <head>
     <title>Mirror Fashion</title>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="estilos.css">   
+    <link rel="stylesheet" href="mobile.css" media="(max-width:939px)">   
 </head>    
 <body>
     <header class="container">    
@@ -42,7 +44,14 @@
             
             <nav>
                 <ul>
-                    <li><a href = "#">Blusas e Camisas</a></li>               
+                    <li><a href = "#">Blusas e Camisas</a>
+                        <ul>
+                            <li><a href="#">Manga curta</a></li>
+                            <li><a href="#">Manga comprida</a></li>
+                            <li><a href="#">Camisa social</a></li>
+                            <li><a href="#">Camisa casual</a></li>
+                        </ul>
+                    </li>               
                     <li><a href = "#">Calcas</a></li>
                     <li><a href = "#">Saias</a></li>
                     <li><a href = "#">Vestidos</a></li>
@@ -53,7 +62,7 @@
             </nav>
         </section>
         
-        <img src="caelum-arquivos-curso-web/mirrorfashion/img/destaque-home.png" alt="Promocao: Big City Night">        
+        <img id="image-propaganda" src="caelum-arquivos-curso-web/mirrorfashion/img/destaque-home.png" alt="Promocao: Big City Night">        
     </div>
     <div class="container paineis">
         <section class="painel novidades">
@@ -135,6 +144,15 @@
     
     <footer>
         <!--Conteudo do rodape-->
+        <div class="container">
+            <img src="caelum-arquivos-curso-web/mirrorfashion/img/logo-rodape.png" alt="Logo Mirror Fashion">
+        
+            <ul class="social">
+                <li><a href="http://facebook.com/mirrorfashion">Facebook</a></li>
+                <li><a         href="http://twitter.com/mirrorfashion">Twitter</a></li>
+                <li><a href="http://plus.google.com/mirrorfashion">Google+</a>  </li>
+            </ul>
+        </div>    
     </footer>
 </body>
 </html>

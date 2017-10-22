@@ -1,0 +1,50 @@
+@media (min-width: 100px){
+    header img{    
+        max-width: 50%;
+        margin: 0 33%;  
+    }
+    .sacola{
+        display: none;
+    }    
+    
+    body{
+        width: 90%;
+        padding: 2%;
+        margin: 0%;
+    }
+    .menu-opcoes{
+        position: static;
+        display: block;
+        margin-top: 30px;
+        text-align: center;
+    
+    }
+    
+    #text-titulo-principal{
+        width: 100%;
+        text-align: center;                
+        margin: 0% 1%;
+    }
+    #centro-distribuicao{
+        width: 98%;        
+        text-align: center;
+        margin-left: 0%;
+        margin: 1%;
+    }
+    
+    #centro-distribuicao img {
+        width: 96%;       
+    }
+    
+    #familia-pelho{
+        float: none;
+        width: 100%;
+    }
+    
+    #rodape{
+        margin-left: 0;
+        margin: 0% 1%;
+        text-align: center;
+        width: 100%;
+    }
+}
